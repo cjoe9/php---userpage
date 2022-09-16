@@ -1,0 +1,260 @@
+body{
+    background-image: url('photo/Gymshark.jpg');
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    background-color: white;
+    margin: 0 auto 6px;
+}
+.all{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bg{
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    background-color: lightgray;
+    box-shadow: 0 3px 3px lightgray;
+}
+ 
+.bg_pic{
+    display: none;
+}
+#bg_pic{
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+    z-index: 5;
+    position: absolute;
+}
+.in{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.chg{
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    padding: 10px;
+}
+.chg span{
+    color: white;
+}
+.b-bar{
+    height:350px;
+    width:60%;
+    margin:30px auto 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.ebtn{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position:relative;
+    top:25px;
+    text-decoration:none;
+    border:2px solid black;
+    color:black;
+    padding:5px 35px 5px 35px;
+    font-size: 16px;
+    background-color: white;
+}
+.ebtn:hover{
+    background-color: black;
+    color:white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.c-bar tr{
+    line-height:3em;
+}
+.a{
+    padding-left:20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.b{
+    color:red;
+}
+.con{
+    width: 60%;
+    text-align: center;
+    margin: 80px auto 0;
+}
+.c-bar{
+    margin-bottom: 20px;
+}
+.con-b{
+    width: 40%;
+    position: relative;
+    top: -110px;
+}
+.side{
+    width: 60%;
+    height: 550px;
+    z-index: 1000;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px 2px #888888,-1px -1px 5px 2px #888888;
+    position: relative;
+}
+.user{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    color: transparent;
+    transition: all .3s ease;
+}
+#us{
+    display: none;
+}
+#user{
+    z-index: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.us{
+    cursor: pointer;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.us:hover{
+    z-index: 1000;
+    color: rgb(250, 250, 250);
+    background-color: rgba(0, 0, 0, .8);
+    transition: background-color .2s ease-in-out;
+}
+.side-bar{
+    box-sizing: border-box;
+    border: 0;
+    width: 100%;
+    height: 50%;
+}
+.side-bar a{
+    text-decoration: none;
+    color: black;
+    padding-left: 30px;
+    width: 100%;
+}
+.side-bar a:hover{
+    cursor: pointer;
+}
+
+/*-----------------u_booking.php/u_register.php--------------------*/
+.b_content{
+    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+}
+.a_table{
+    width: 60%;
+    margin: 0px auto 30px;
+}
+.a_table tr{
+    line-height: 2em;
+    text-align: center;
+}
+.a_table .r{
+    color: red;
+}
+.b_table .g{
+    background-color: red;
+    color:white;
+    text-align: center;
+    padding: 5px;
+}
+.b_table{
+    width: 100%;
+
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.dis_err{
+    color:red;
+    width: 40%;
+    margin: auto;
+    position: absolute;
+    font-size: 12px;
+}
+.btn{
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    border:2px solid black;
+}
+
+/*-----------------phone/tab--------------------*/
+@media screen and (min-width:300px) and (max-width:1000px){
+    .container,.b_content,#bg_pic,.in, form, con, .c-bar{
+        width: 100%;
+    }
+    .container{
+        height: auto;
+    }
+    .all{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .a_table{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .c-bar{
+        font-size:14px;
+    }
+    .b-bar{
+        width: 100%;
+        text-align: center;
+        margin:0;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .con{
+        margin: 0px auto 60px;
+    }
+    .con-b{
+        width: 100%;
+        top: -50px;
+    }
+    .side{
+        width: 40%;
+        height: 350px;
+        margin: auto;
+    }
+    .user{
+        width:100%;
+    }
+    .side-bar a{
+        font-size: 14px;
+    }
+    #godown{
+        margin-bottom: 120px;
+    }
+    .dis_err{
+        color:red;
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        font-size: 16px;
+    }
+    
+}

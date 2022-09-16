@@ -1,0 +1,89 @@
+body{
+    background-image: url('photo/Gymshark.jpg');
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container{
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 6px;
+}
+.info{
+    background-color: white;
+    width: 60%;
+    height: 400px;
+    opacity: 0.8;
+    border-radius: 15px;
+    text-align: center;
+}
+.fir,.sec{
+    position: relative;
+    top: 30px;
+    letter-spacing: 1px;
+}
+.sub{
+    display: flex;
+    position: relative;
+    top: 60px;
+    justify-content: space-evenly;
+}
+.b1,.b2{
+    width: 40%;
+}
+.ph,.em,.wa{
+    width: 50px;
+    position: relative;
+}
+.ph:hover,
+.wa:hover,
+.em:hover{
+    translate: 0 -10px;
+    transition: 1s;
+}
+.ph{
+    margin-right: 13px;
+}
+.wa{
+    margin-left: 13px;
+}
+.sub a{
+    text-decoration: none;
+}
+
+
+/*---------------tab/phone----------------*/
+@media screen and (min-width:300px) and (max-width:1000px){
+    .container{
+        width: 100%;
+    }
+    .sub-con{
+        margin-top: 30px;
+    }
+    .info{
+        width: 90%;
+    }
+    .fir{
+        font-size: 24px;
+    }
+    .sec{
+        font-size: 14px;
+        letter-spacing: normal;
+    }
+    .ph,.em,.wa{
+        width: 30px;
+    }
+    .b1 p,small,a{
+        font-size: 12px;
+    }
+    .b2 p,small,a{
+        font-size: 12px;
+    }
+    .ph:hover,
+    .wa:hover,
+    .em:hover{
+        translate: 0 -5px;
+    transition: 1s;
+}
+}

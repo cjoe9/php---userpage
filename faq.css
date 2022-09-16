@@ -1,0 +1,129 @@
+body{
+    background-image: url('photo/Gymshark.jpg');
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container1{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+}
+.title{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 3px lightslategrey;
+}
+.faq{
+    list-style: none;
+    position: relative;
+    top: 40px;
+    width: 80%;
+    margin: 0 auto;
+}
+.faq li{
+    background-color: #f2f2f2;
+    border-bottom: 1px solid lightgray;
+}
+.q{
+    padding: 1em 0;
+    border-left: 10px solid #f2f2f2;
+    cursor: pointer;
+}
+.q:hover,
+.q:hover .ar{
+    border-left-color: blue;
+}
+.ar{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 0 0.5em;
+    border-top: 6px solid transparent;
+    border-left: 10px solid #555;
+    border-bottom: 6px solid transparent;
+    transition: 0.5s;
+}
+.faq p{
+    color: cornflowerblue;
+    line-height: 25px;
+}
+.a{
+    padding: 0em 0em 1em 3.3em;
+}
+.q:hover .ar{
+    transform: rotate(90deg);
+}
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+.form{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 50px;
+}
+.block{
+    width: 80%;
+    margin: 0 auto;
+}
+.block span{
+    padding-right: 5px;
+}
+.ex{
+    width: 80%;
+    border-radius: 15px;
+    padding-left: -250px;
+    padding-left: 10px;
+    border: 1px solid lightgrey;
+}
+.ex:hover{
+    border: 1px solid blue;
+}
+.btn{
+    width: 80px;
+    height: 40px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+.btn:hover{
+    background-color: brown;
+    transform: translate(2px,2px);
+    transition: 0.5s;
+}
+.s{
+    color: green;
+}
+.f{
+    color: red;
+}
+/*----------------tab/phone-------------*/
+@media screen and (min-width:300px)and (max-width:800px){
+    .container1, form, block{
+        width: 100%;
+    }
+    .faq{
+        width: 80%;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .faq p{
+        font-size: 14px;
+    }
+}
